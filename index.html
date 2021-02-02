@@ -26,26 +26,26 @@
                 </select>
             </label>
             <br>
-            <h2 class="controlName">flex-warp</h2>
+            <h2 class="controlName">flex-wrap</h2>
             <label>
-                <select id="select_flex-warp" onchange="onchange_Style_flexWarp()">
+                <select id="select_flex-wrap" onchange="onchange_Style_flexWrap()">
                     <option value="nowrap">nowrap</option>
-                    <option value="wrap">warp</option>
+                    <option value="wrap">wrap</option>
                     <option value="wrap-reverse">wrap-reverse</option>
                 </select>
             </label>
             <br>
             <h2 class="controlName">flex-flow</h2>
             <label>
-                <select>
+                <select id="select_flex-flow_direction" onchange="onchange_Style_flexFlow_Direction()">
                     <option value="row">row</option>
                     <option value="row-reverse">row-reverse</option>
                     <option value="column">column</option>
                     <option value="column-reverse">column-reverse</option>
                 </select>
-                <select>
+                <select id="select_flex-flow_wrap" onchange="onchange_Style_flexFlow_Wrap()">
                     <option value="nowrap">nowrap</option>
-                    <option value="wrap">warp</option>
+                    <option value="wrap">wrap</option>
                     <option value="wrap-reverse">wrap-reverse</option>
                 </select>
             </label>
@@ -62,7 +62,7 @@
             <div>9</div>
             <div>10</div>
         </div>
-<!--        <a class="btn" onclick="test_Debug()" >按钮</a>-->
+        <a class="btn" onclick="test_Debug()" >按钮</a>
     </article>
 </main>
 
