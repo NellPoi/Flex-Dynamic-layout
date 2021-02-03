@@ -12,10 +12,15 @@
 <main>
     <h1 class="mainTitle">Flex 布局应用</h1>
     <hr>
-    <article>
-        <code>display:flex</code>
-        <code>flex-direction:row</code>
+    <article style="margin-top:1.5em">
+<!--        <code>display:flex</code>-->
+<!--        <code>flex-direction:row</code>-->
         <form action="">
+            <h2 class="controlName">生成的数量</h2>
+            <label>
+                <input type="range" id="range_Count" oninput="oninput_Count()" onclick="onclick_RemoveAll()">
+            </label>
+            <br>
             <h2 class="controlName">flex-direction</h2>
             <label>
                 <select id="select_flex-direction" onchange="onchange_Style_flexDirection()">
