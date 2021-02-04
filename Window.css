@@ -1,0 +1,17 @@
+section {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /*opacity: 50%;*/
+    background-color: var(--mainColor_3);
+    box-shadow: 1px 1px 3px 1px var(--mainColor_2);
+}
+section:before{
+    /*position: absolute;*/
+    content: "ControlPanel";
+    background: var(--mainColor_2);
+    height: 1rem;
+    padding: 10px;
+    line-height: 10px;
+    display: flex;
+}

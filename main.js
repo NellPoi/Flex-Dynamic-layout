@@ -1,5 +1,4 @@
 window.onload = function () {
-    console.info("Loaded Script Successful")
 }
 let table_Count=10;
 const title="Flex 布局应用"
@@ -54,7 +53,6 @@ function oninput_Width(){
     document.querySelector(".mainTitle").innerHTML=value+"%"
     for (let i=1;i<=table_Count;i++) {
         let obj = document.querySelector(".flex_table div:nth-child("+i+")")
-        console.log(value)
         obj.style.width = (value*5) + "px"
     }
 }

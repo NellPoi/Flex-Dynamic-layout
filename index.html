@@ -7,31 +7,36 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="flex.css">
     <script src="main.js"></script>
+    <script src="WindowServer.js"></script>
+    <link rel="stylesheet" href="Window.css">
+
 </head>
 <body>
 <main>
+<!--    <div class="form_Main">form_Main</div>-->
     <h1 class="mainTitle">Flex 布局应用</h1>
     <hr>
     <article>
 <!--        <code>display:flex</code>-->
 <!--        <code>flex-direction:row</code>-->
+        <section>
         <form action="">
-            <h2 class="controlName">高度</h2>
+            <p class="controlName">高度</p>
             <label>
                 <input type="range" id="range_Height" oninput="oninput_Height()" onmouseup="resetMainTitle()">
             </label>
             <br>
-            <h2 class="controlName">宽度</h2>
+            <p class="controlName">宽度</p>
             <label>
                 <input type="range" id="range_Width" oninput="oninput_Width()" onmouseup="resetMainTitle()">
             </label>
             <br>
-            <h2 class="controlName">生成的数量</h2>
+            <p class="controlName">生成的数量</p>
             <label>
                 <input type="range" id="range_Count" onmousedown="onmousedown_RemoveAll()" oninput="oninput_Count()">
             </label>
             <br>
-            <h2 class="controlName">flex-direction</h2>
+            <p class="controlName">flex-direction</p>
             <label>
                 <select id="select_flex-direction" onchange="onchange_Style_flexDirection()">
                     <option value="row">row</option>
@@ -41,7 +46,7 @@
                 </select>
             </label>
             <br>
-            <h2 class="controlName">flex-wrap</h2>
+            <p class="controlName">flex-wrap</p>
             <label>
                 <select id="select_flex-wrap" onchange="onchange_Style_flexWrap()">
                     <option value="nowrap">nowrap</option>
@@ -50,7 +55,7 @@
                 </select>
             </label>
             <br>
-            <h2 class="controlName">flex-flow</h2>
+            <p class="controlName">flex-flow</p>
             <label>
                 <select id="select_flex-flow_direction" onchange="onchange_Style_flexFlow_Direction()">
                     <option value="row">row</option>
@@ -65,6 +70,7 @@
                 </select>
             </label>
         </form>
+        </section>
         <div class="flex_table">
             <div>1</div>
             <div>2</div>
