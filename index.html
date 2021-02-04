@@ -12,13 +12,23 @@
 <main>
     <h1 class="mainTitle">Flex 布局应用</h1>
     <hr>
-    <article style="margin-top:1.5em">
+    <article>
 <!--        <code>display:flex</code>-->
 <!--        <code>flex-direction:row</code>-->
         <form action="">
+            <h2 class="controlName">高度</h2>
+            <label>
+                <input type="range" id="range_Height" oninput="oninput_Height()" onmouseup="resetMainTitle()">
+            </label>
+            <br>
+            <h2 class="controlName">宽度</h2>
+            <label>
+                <input type="range" id="range_Width" oninput="oninput_Width()" onmouseup="resetMainTitle()">
+            </label>
+            <br>
             <h2 class="controlName">生成的数量</h2>
             <label>
-                <input type="range" id="range_Count" oninput="oninput_Count()" onclick="onclick_RemoveAll()">
+                <input type="range" id="range_Count" onmousedown="onmousedown_RemoveAll()" oninput="oninput_Count()">
             </label>
             <br>
             <h2 class="controlName">flex-direction</h2>

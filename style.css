@@ -4,7 +4,7 @@
     --mainColor_3: #E0E3DA;
     --mainColor_4: #a593e0;
     /*DEFAULT STYLE*/
-    font-family:"SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     margin: 5rem;
     background: var(--mainColor_1);
 }
@@ -44,15 +44,18 @@ code {
 }
 
 .controlName {
-    color: var(--mainColor_2);
-    /*font-size: 2rem;*/
+    color: var(--mainColor_3);
     display: inline;
     margin: 0;
     padding: 0;
 }
 
+select,label, input[type="range"] {
+    margin: .5rem 0;
+    padding: 0;
+}
+
 select {
-    margin: 1rem 0 0;
     padding: .5rem;
     color: var(--mainColor_4);
     cursor: context-menu;
@@ -61,7 +64,11 @@ select {
     font-family: "PingFang HK", monospace;
     font-size: 1rem;
 }
-
+/* range适配费事 */
+/*input[type="range"]{*/
+/*    color: var(--mainColor_4);*/
+/*    height: 1rem;*/
+/*}*/
 .btn {
     background: var(--mainColor_4);
     color: var(--mainColor_2);
