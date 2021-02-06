@@ -6,7 +6,7 @@ function disabledSelect() {
 
 window.onload = () => {
     //获取拖拽实验对象
-    let form = document.querySelector("section")
+    let form = document.querySelector(".form")
     let debug_ContentMessage
     //在该对象上绑定鼠标点击事件
     form.onmousedown = (e) => {

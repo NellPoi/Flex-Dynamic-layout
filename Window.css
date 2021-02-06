@@ -1,17 +1,30 @@
-section {
-    position: fixed;
+:root{
+    --form_BorderRadius:8px;
+}
+.form {
+    position: absolute;
     top: 0px;
     left: 0px;
-    /*opacity: 50%;*/
-    background-color: var(--mainColor_3);
-    box-shadow: 1px 1px 3px 1px var(--mainColor_2);
+    height: 300px;
+    width: 350px;
+    background-color: var(--mainColor_2);
+    box-shadow: 1px 1px 3px 1px gray;
+    border-radius: var(--form_BorderRadius);
 }
-section:before{
-    /*position: absolute;*/
-    content: "ControlPanel";
-    background: var(--mainColor_2);
-    height: 1rem;
-    padding: 10px;
-    line-height: 10px;
+.xy-mid{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    height: 100%;
 }
+.form-header{
+    /*color: var(--mainColor_2);*/
+    padding: .5rem;
+    background-color: var(--mainColor_3);
+    border-radius: var(--form_BorderRadius) var(--form_BorderRadius) 0 0;
+}
+
+/**:hover{*/
+/*    border:1px solid red;*/
+/*}*/
