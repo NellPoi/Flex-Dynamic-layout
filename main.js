@@ -78,4 +78,6 @@ function onmousedown_RemoveAll() {
 }
 
 function test_Debug() {
+    console.log("HIDE")
+    document.querySelector(".form").style.display="none";
 }

@@ -1,6 +1,7 @@
-:root{
-    --form_BorderRadius:8px;
+:root {
+    --form_BorderRadius: 8px;
 }
+
 .form {
     position: absolute;
     top: 0px;
@@ -11,20 +12,56 @@
     box-shadow: 1px 1px 3px 1px gray;
     border-radius: var(--form_BorderRadius);
 }
-.xy-mid{
+
+.xy-mid {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100%;
     height: 100%;
 }
-.form-header{
+
+.form-header {
     /*color: var(--mainColor_2);*/
     padding: .5rem;
     background-color: var(--mainColor_3);
     border-radius: var(--form_BorderRadius) var(--form_BorderRadius) 0 0;
 }
 
+.form-header-control {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-header-control div{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 .2rem;
+}
+
+.form-header-control .close {
+    background: #FF6057;
+}
+
+.form-header-control .hide {
+    background: #FEBC2E;
+}
+
+.form-header-control .max {
+    background: #27C840;
+}
+.form-header-control .title{
+    /*这是一个临时的解决方案，*/
+    margin-left: .5rem;
+    color: var(--mainColor_1);
+}
+.form_body{
+    color: var(--mainColor_1);
+}
+.form-header-control div:hover{
+    opacity: 70%;
+}
 /**:hover{*/
 /*    border:1px solid red;*/
 /*}*/

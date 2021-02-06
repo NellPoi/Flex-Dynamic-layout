@@ -8,7 +8,6 @@
     margin: 5rem;
     background: var(--mainColor_1);
 }
-
 hr {
     height: 6px;
     background: var(--mainColor_3);
@@ -77,12 +76,11 @@ select {
     transition-duration: .2s;
     transition-timing-function: ease-in;
 }
-
-.btn:hover {
+.btn:hover{
     background: var(--mainColor_2);
-    color: var(--mainColor_4);
+    color:var(--mainColor_4);
+    border:1px solid var(--mainColor_4);
 }
-
 .btn:active {
     color: var(--mainColor_1);
 }
