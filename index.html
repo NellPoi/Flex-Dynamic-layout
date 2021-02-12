@@ -34,6 +34,10 @@
 <!--        <code>flex-direction:row</code>-->
         <section>
         <form action="">
+            <p class="controlName">显示容器边框</p>
+            <label>
+                <input type="checkbox" id="checkbox_DisplayBorder" onchange="onchange_DisplayBorder()"><br>
+            </label>
             <p class="controlName">高度</p>
             <label>
                 <input type="range" id="range_Height" oninput="oninput_Height()" onmouseup="resetMainTitle()">
@@ -46,7 +50,7 @@
             <br>
             <p class="controlName">生成的数量</p>
             <label>
-                <input type="range" id="range_Count" onmousedown="onmousedown_RemoveAll()" oninput="oninput_Count()">
+                <input type="range" id="range_Count" onmousedown="onmousedown_RemoveAll()" oninput="oninput_Count()" disabled>
             </label>
             <br>
             <p class="controlName">flex-direction</p>
@@ -82,6 +86,27 @@
                     <option value="wrap-reverse">wrap-reverse</option>
                 </select>
             </label>
+            <br>
+            <p class="controlName">justify-content</p>
+            <label>
+                <select id="select_flex-content" onchange="onchange_Style_flexContent()">
+                    <option>flex-start</option>
+                    <option>flex-end</option>
+                    <option>center</option>
+                    <option>space-between</option>
+                    <option>space-around</option>
+                </select>
+            </label>
+            <br>
+            <p class="controlName">align-items</p>
+            <select id="select_align-items" onchange="onchange_Style_alignItems()">
+                <option>flex-start</option>
+                <option>flex-end</option>
+                <option>center</option>
+                <option>baseline</option>
+                <option>stretch</option>
+            </select>
+            <p title="因为flex的容器为自适应大小，紧贴着项目大小变化而变化，该属性需要在容器有足够大空余空间才能看到效果，可在开发者工具使.flex_table容器高宽发生改变来实现效果的呈现。" class="controlName-tip"> 为什么不生效？</p>
         </form>
         </section>
         <div class="flex_table">

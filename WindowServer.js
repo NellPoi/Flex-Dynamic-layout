@@ -3,9 +3,17 @@ function disabledSelect() {
         window.getSelection().removeAllRanges()  // 去掉所有选中范围，也就是禁止选择内容
     })
 }
-
 window.onload = () => {
     //获取拖拽实验对象
+    let close=document.querySelector(".form-header-control .close")
+    close.onclick=function (){
+        document.querySelector(".form").style.display="none"
+    }
+    let hide=document.querySelector(".form-header-control .hide")
+    hide.onclick=function (){
+        document.querySelector(".form").style.height="1rem"
+        document.querySelector(".form_body").style.display="none"
+    }
     let form = document.querySelector(".form")
     let debug_ContentMessage
     //在该对象上绑定鼠标点击事件

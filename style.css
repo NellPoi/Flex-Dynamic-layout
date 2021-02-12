@@ -48,9 +48,17 @@ code {
     margin: 0;
     padding: 0;
 }
+.controlName-tip{
+    color: var(--mainColor_4);
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    cursor: help;
+}
 
 select,label, input[type="range"] {
-    margin: .5rem 0;
+    /*margin: .5rem 0;*/
     padding: 0;
 }
 

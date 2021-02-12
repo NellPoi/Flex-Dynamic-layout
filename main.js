@@ -1,11 +1,20 @@
 window.onload = function () {
 }
-let table_Count=10;
-const title="Flex 布局应用"
-// function interface_OptionSync_flexFlow(v1, v2) {
-//     // let direction=document.getElementById("")
-//
-// }
+let table_Count = 10;
+const title = "Flex 布局应用"
+
+function onchange_DisplayBorder() {
+    let checkbox = document.querySelector("#checkbox_DisplayBorder")
+    let flex = document.querySelector(".flex_table")
+    switch (checkbox.checked) {
+        case true:
+            flex.style.border = "1px solid #a593e0"
+            break
+        case false:
+            flex.style.border = "none"
+            break
+    }
+}
 
 function onchange_Style_flexDirection() {
     let select = document.querySelector("#select_flex-direction")
@@ -37,31 +46,42 @@ function onchange_Style_flexFlow_Wrap() {
     document.querySelector("#select_flex-wrap").selectedIndex = self.selectedIndex
     document.querySelector(".flex_table").style.flexFlow = v1 + " " + v2
 }
-function oninput_Height(){
-    let value=document.querySelector("#range_Height").value
-    document.querySelector(".mainTitle").innerHTML=value+"%"
-    for (let i=1;i<=table_Count;i++) {
-        let obj = document.querySelector(".flex_table div:nth-child("+i+")")
-        obj.textContent=""
-        obj.style.height = (value*5) + "px"
-        obj.style.lineHeight=(value*5) + "px"
+
+function onchange_Style_flexContent() {
+    document.querySelector(".flex_table").style.justifyContent = document.querySelector("#select_flex-content").value
+}
+
+function onchange_Style_alignItems() {
+    document.querySelector(".flex_table").style.alignItems = document.querySelector("#select_align-items").value
+}
+
+function oninput_Height() {
+    let value = document.querySelector("#range_Height").value
+    document.querySelector(".mainTitle").innerHTML = value + "%"
+    for (let i = 1; i <= table_Count; i++) {
+        let obj = document.querySelector(".flex_table div:nth-child(" + i + ")")
+        obj.textContent = ""
+        obj.style.height = (value * 5) + "px"
+        obj.style.lineHeight = (value * 5) + "px"
     }
 }
 
-function oninput_Width(){
-    let value=document.querySelector("#range_Width").value
-    document.querySelector(".mainTitle").innerHTML=value+"%"
-    for (let i=1;i<=table_Count;i++) {
-        let obj = document.querySelector(".flex_table div:nth-child("+i+")")
-        obj.style.width = (value*5) + "px"
+function oninput_Width() {
+    let value = document.querySelector("#range_Width").value
+    document.querySelector(".mainTitle").innerHTML = value + "%"
+    for (let i = 1; i <= table_Count; i++) {
+        let obj = document.querySelector(".flex_table div:nth-child(" + i + ")")
+        obj.style.width = (value * 5) + "px"
     }
 }
-function resetMainTitle(){
-    document.querySelector(".mainTitle").innerHTML=title;
-    for (let i=1;i<=table_Count;i++) {
-        document.querySelector(".flex_table div:nth-child("+i+")").textContent=i.toString()
+
+function resetMainTitle() {
+    document.querySelector(".mainTitle").innerHTML = title;
+    for (let i = 1; i <= table_Count; i++) {
+        document.querySelector(".flex_table div:nth-child(" + i + ")").textContent = i.toString()
     }
 }
+
 function oninput_Count() {
 
     let value = document.querySelector("#range_Count").value
@@ -79,5 +99,5 @@ function onmousedown_RemoveAll() {
 
 function test_Debug() {
     console.log("HIDE")
-    document.querySelector(".form").style.display="none";
+    document.querySelector(".form").style.display = "none";
 }
