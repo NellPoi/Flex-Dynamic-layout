@@ -3,11 +3,11 @@
     --mainColor_2: #FFFFF3;
     --mainColor_3: #E0E3DA;
     --mainColor_4: #a593e0;
-    /*DEFAULT STYLE*/
     font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     margin: 5rem;
     background: var(--mainColor_1);
 }
+
 hr {
     height: 6px;
     background: var(--mainColor_3);
@@ -21,9 +21,8 @@ hr {
     color: var(--mainColor_2);
 }
 
-/*article */
 code {
-    background: var(--mainColor_4);
+    background: var(--mainColor_2);
     color: var(--mainColor_1);
     margin: 0 10px 10px 0;
     padding: .2rem;
@@ -48,7 +47,8 @@ code {
     margin: 0;
     padding: 0;
 }
-.controlName-tip{
+
+.controlName-tip {
     color: var(--mainColor_4);
     display: inline;
     margin: 0;
@@ -57,9 +57,8 @@ code {
     cursor: help;
 }
 
-select,label, input[type="range"] {
-    /*margin: .5rem 0;*/
-    padding: 0;
+code, input[type="checkbox"], input[type="range"] {
+    margin: .5rem 0;
 }
 
 select {
@@ -71,11 +70,7 @@ select {
     font-family: "PingFang HK", monospace;
     font-size: 1rem;
 }
-/* range适配费事 */
-/*input[type="range"]{*/
-/*    color: var(--mainColor_4);*/
-/*    height: 1rem;*/
-/*}*/
+
 .btn {
     background: var(--mainColor_4);
     color: var(--mainColor_2);
@@ -84,11 +79,13 @@ select {
     transition-duration: .2s;
     transition-timing-function: ease-in;
 }
-.btn:hover{
+
+.btn:hover {
     background: var(--mainColor_2);
-    color:var(--mainColor_4);
-    border:1px solid var(--mainColor_4);
+    color: var(--mainColor_4);
+    border: 1px solid var(--mainColor_4);
 }
+
 .btn:active {
     color: var(--mainColor_1);
 }

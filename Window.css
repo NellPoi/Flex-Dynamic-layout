@@ -22,7 +22,6 @@
 }
 
 .form-header {
-    /*color: var(--mainColor_2);*/
     padding: .5rem;
     background-color: var(--mainColor_3);
     border-radius: var(--form_BorderRadius) var(--form_BorderRadius) 0 0;
@@ -33,7 +32,8 @@
     justify-content: center;
     align-items: center;
 }
-.form-header-control div{
+
+.form-header-control div {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -51,17 +51,16 @@
 .form-header-control .max {
     background: #27C840;
 }
-.form-header-control .title{
-    /*这是一个临时的解决方案，*/
+
+.form-header-control .title {
     margin-left: .5rem;
     color: var(--mainColor_1);
 }
-.form_body{
+
+.form_body {
     color: var(--mainColor_1);
 }
-.form-header-control div:hover{
+
+.form-header-control div:hover {
     opacity: 70%;
 }
-/**:hover{*/
-/*    border:1px solid red;*/
-/*}*/

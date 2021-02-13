@@ -9,7 +9,6 @@
     <script src="main.js"></script>
     <script src="WindowServer.js"></script>
     <link rel="stylesheet" href="Window.css">
-
 </head>
 <body>
 <main>
@@ -24,90 +23,94 @@
         </div>
         <div class="form_body xy-mid">
             <p>Beta 预览版本</p>
-            <a class="btn" onclick="test_Debug()" >按钮</a>
+            <a class="btn" onclick="test_Debug()">按钮</a>
         </div>
     </div>
     <h1 class="mainTitle">Flex 布局应用</h1>
     <hr>
     <article>
-<!--        <code>display:flex</code>-->
-<!--        <code>flex-direction:row</code>-->
+        <code>display:flex</code>
+        <code>flex-direction:row</code>
         <section>
-        <form action="">
-            <p class="controlName">显示容器边框</p>
-            <label>
-                <input type="checkbox" id="checkbox_DisplayBorder" onchange="onchange_DisplayBorder()"><br>
-            </label>
-            <p class="controlName">高度</p>
-            <label>
-                <input type="range" id="range_Height" oninput="oninput_Height()" onmouseup="resetMainTitle()">
-            </label>
-            <br>
-            <p class="controlName">宽度</p>
-            <label>
-                <input type="range" id="range_Width" oninput="oninput_Width()" onmouseup="resetMainTitle()">
-            </label>
-            <br>
-            <p class="controlName">生成的数量</p>
-            <label>
-                <input type="range" id="range_Count" onmousedown="onmousedown_RemoveAll()" oninput="oninput_Count()" disabled>
-            </label>
-            <br>
-            <p class="controlName">flex-direction</p>
-            <label>
-                <select id="select_flex-direction" onchange="onchange_Style_flexDirection()">
-                    <option value="row">row</option>
-                    <option value="row-reverse">row-reverse</option>
-                    <option value="column">column</option>
-                    <option value="column-reverse">column-reverse</option>
-                </select>
-            </label>
-            <br>
-            <p class="controlName">flex-wrap</p>
-            <label>
-                <select id="select_flex-wrap" onchange="onchange_Style_flexWrap()">
-                    <option value="nowrap">nowrap</option>
-                    <option value="wrap">wrap</option>
-                    <option value="wrap-reverse">wrap-reverse</option>
-                </select>
-            </label>
-            <br>
-            <p class="controlName">flex-flow</p>
-            <label>
-                <select id="select_flex-flow_direction" onchange="onchange_Style_flexFlow_Direction()">
-                    <option value="row">row</option>
-                    <option value="row-reverse">row-reverse</option>
-                    <option value="column">column</option>
-                    <option value="column-reverse">column-reverse</option>
-                </select>
-                <select id="select_flex-flow_wrap" onchange="onchange_Style_flexFlow_Wrap()">
-                    <option value="nowrap">nowrap</option>
-                    <option value="wrap">wrap</option>
-                    <option value="wrap-reverse">wrap-reverse</option>
-                </select>
-            </label>
-            <br>
-            <p class="controlName">justify-content</p>
-            <label>
-                <select id="select_flex-content" onchange="onchange_Style_flexContent()">
-                    <option>flex-start</option>
-                    <option>flex-end</option>
-                    <option>center</option>
-                    <option>space-between</option>
-                    <option>space-around</option>
-                </select>
-            </label>
-            <br>
-            <p class="controlName">align-items</p>
-            <select id="select_align-items" onchange="onchange_Style_alignItems()">
-                <option>flex-start</option>
-                <option>flex-end</option>
-                <option>center</option>
-                <option>baseline</option>
-                <option>stretch</option>
-            </select>
-            <p title="因为flex的容器为自适应大小，紧贴着项目大小变化而变化，该属性需要在容器有足够大空余空间才能看到效果，可在开发者工具使.flex_table容器高宽发生改变来实现效果的呈现。" class="controlName-tip"> 为什么不生效？</p>
-        </form>
+            <form action="">
+                <p class="controlName">显示容器边框</p>
+                <label>
+                    <input type="checkbox" id="checkbox_DisplayBorder" onchange="onchange_DisplayBorder()"><br>
+                </label>
+                <p class="controlName">高度</p>
+                <label>
+                    <input type="range" id="range_Height" oninput="oninput_Height()" onmouseup="resetMainTitle()">
+                </label>
+                <br>
+                <p class="controlName">宽度</p>
+                <label>
+                    <input type="range" id="range_Width" oninput="oninput_Width()" onmouseup="resetMainTitle()">
+                </label>
+                <br>
+                <p class="controlName">生成的数量</p>
+                <label>
+                    <input type="range" id="range_Count" onmousedown="onmousedown_RemoveAll()" oninput="oninput_Count()"
+                           disabled>
+                </label>
+                <br>
+                <p class="controlName">flex-direction</p>
+                <label>
+                    <select id="select_flex-direction" onchange="onchange_Style_flexDirection()">
+                        <option value="row">row</option>
+                        <option value="row-reverse">row-reverse</option>
+                        <option value="column">column</option>
+                        <option value="column-reverse">column-reverse</option>
+                    </select>
+                </label>
+                <br>
+                <p class="controlName">flex-wrap</p>
+                <label>
+                    <select id="select_flex-wrap" onchange="onchange_Style_flexWrap()">
+                        <option value="nowrap">nowrap</option>
+                        <option value="wrap">wrap</option>
+                        <option value="wrap-reverse">wrap-reverse</option>
+                    </select>
+                </label>
+                <br>
+                <p class="controlName">flex-flow</p>
+                <label>
+                    <select id="select_flex-flow_direction" onchange="onchange_Style_flexFlow_Direction()">
+                        <option value="row">row</option>
+                        <option value="row-reverse">row-reverse</option>
+                        <option value="column">column</option>
+                        <option value="column-reverse">column-reverse</option>
+                    </select>
+                    <select id="select_flex-flow_wrap" onchange="onchange_Style_flexFlow_Wrap()">
+                        <option value="nowrap">nowrap</option>
+                        <option value="wrap">wrap</option>
+                        <option value="wrap-reverse">wrap-reverse</option>
+                    </select>
+                </label>
+                <br>
+                <p class="controlName">justify-content</p>
+                <label>
+                    <select id="select_flex-content" onchange="onchange_Style_flexContent()">
+                        <option>flex-start</option>
+                        <option>flex-end</option>
+                        <option>center</option>
+                        <option>space-between</option>
+                        <option>space-around</option>
+                    </select>
+                </label>
+                <br>
+                <p class="controlName">align-items</p>
+                <label>
+                    <select id="select_align-items" onchange="onchange_Style_alignItems()">
+                        <option>flex-start</option>
+                        <option>flex-end</option>
+                        <option>center</option>
+                        <option>baseline</option>
+                        <option>stretch</option>
+                    </select>
+                </label>
+                <p title="因为flex的容器为自适应大小，紧贴着项目大小变化而变化，该属性需要在容器有足够大空余空间才能看到效果，可在开发者工具使.flex_table容器高宽发生改变来实现效果的呈现。"
+                   class="controlName-tip"> 为什么不生效？</p>
+            </form>
         </section>
         <div class="flex_table">
             <div>1</div>
@@ -123,6 +126,5 @@
         </div>
     </article>
 </main>
-
 </body>
 </html>
